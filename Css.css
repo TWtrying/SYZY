@@ -1,0 +1,93 @@
+@font-face {
+    src: url("src/simkai.ttf");
+    font-family: 'simkai.ttf';
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'simkai.ttf';
+}
+body{
+    overflow-y: hidden;
+}
+.bgimg1{
+    cursor: url("src/mouseico.svg"),auto;
+    position: absolute;
+    height: 1050px;
+    z-index: 0;
+    transition: all 0.3s;
+}
+.bgimg2{
+    position: absolute;
+    height: 1050px;
+    filter: blur(10px);
+    z-index: 2;
+    transition: all 0.3s;
+}
+.box2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    background-color: #f5fffa;
+    width: 100vw;
+    max-width: 1030px;
+    height: 490px;
+    border-radius: 30px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6);
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 1;
+    z-index: 3;
+    transition: all 1s;
+}
+.box1{
+    position: fixed;
+    top: 101%;
+    left: 50%;
+    display: flex;
+    background-color: #f5fffa;
+    width: 100vw;
+    max-width: 1030px;
+    height: 490px;
+    border-radius: 30px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6);
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    z-index: 3;
+    transition: all 1s;
+}
+.boximg{
+    margin: 36px;
+    border-radius: 25px;
+    position: static;
+    width: 340px;
+    height: 340px;
+    z-index: 2;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+}
+.boxdata{
+    position: static;
+    height: 300px;
+    width: 100%;
+    max-width: 540px;
+    padding: 10px;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.title{
+    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+}
+.text{
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    text-indent: 36px;
+}
