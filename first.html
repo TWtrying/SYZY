@@ -16,40 +16,6 @@
             width: 100%;
             z-index: 1;
         }
-        .title{
-            position: absolute;
-            display: flex;
-            top: 15%;
-            left: 50%;
-            width: 70%;
-            font-size: 7vw;
-            font-family: 'simkai.ttf';
-            z-index: 2;
-            transform: translate(-50%,0);
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-        }
-        .s1{
-            transform: translate(0%,30%);
-            animation: act 3s ease-in-out infinite alternate;
-            animation-delay: 0s;
-        }
-        .s2{
-            transform: translate(0%,30%);
-            animation: act 3s ease-in-out infinite alternate;
-            animation-delay: 0.5s;
-        }
-        .s3{
-            transform: translate(0%,30%);
-            animation: act 3s ease-in-out infinite alternate;
-            animation-delay: 1s;
-        }
-        .s4{
-            transform: translate(0%,30%);
-            animation: act 3s ease-in-out infinite alternate;
-            animation-delay: 1.5s;
-        }
         @keyframes act{
             from{
                 transform: translate(0%,30%);
@@ -97,12 +63,6 @@
 </head>
 <body>
     <img src="src/first.jpg">
-    <div class="title">
-        <span class="s1">时</span>
-        <span class="s2">醫</span>
-        <span class="s3">珍</span>
-        <span class="s4">藥</span>
-    </div>
     <button onclick="goto()" >点击进入</button>
     <div id="jieshao" class="jieshao">
         <span><strong>涉及人物：李时珍</strong></span><br>
