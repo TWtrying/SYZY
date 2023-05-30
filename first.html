@@ -4,78 +4,41 @@
     <meta charset="UTF-8">
     <title>时医珍藥</title>
     <link rel="shortcut icon" href="src/icon.ico">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: '楷体';
-        }
-        img{
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            z-index: 1;
-        }
-        @keyframes act{
-            from{
-                transform: translate(0%,30%);
-            }
-            to{
-                transform: translate(0%,-30%);
-            }
-        }
-        button{
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 3;
-            height: 5%;
-            width: 20%;
-            border-radius: 20px;
-            font-size: 32px;
-        }
-        .goto1{
-            position: absolute;
-            z-index: 5;
-            opacity: 0;
-        }
-        .goto2{
-            font-size: 64px;
-            z-index: 5;
-            opacity: 1;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: bisque;
-            transition: all 1s;
-        }
-        .jieshao{
-            position: absolute;
-            top: 50%;
-            left: 60%;
-            line-height: 60px;
-            font-size: 28px;
-            font-family: '楷体';
-            z-index: 5;
-        }
-    </style>
+    <link href="SYZY.css" type="text/css" rel="stylesheet">
 </head>
-<body>
-    <img src="src/first.jpg">
-    <button onclick="goto()" >点击进入</button>
-    <div id="jieshao" class="jieshao">
-        <span><strong>涉及人物：李时珍</strong></span><br>
-        <span><strong>涉及草药：龙葵、车前子、山茱萸、五味子</strong></span><br>
-        <span><strong>事件概述：李时珍跋山涉水,不惧艰难困苦，寻找良药</strong></span>
+<body onload="init()">
+    <img id="rw" class="rw" src="src/lsz.png" onclick="but(event)">
+    <img id="bgimg" class="bgimg" src="src/bg.png" onclick="bgf0()">
+    <img id="lu1" class="lu1" src="src/l1.png">
+    <img id="lu2" class="lu2" src="src/l2.png">
+    <div id="tip" class="tip">
+        <div>
+            <img id="tip-img" src="src/1.png">
+        </div>
+        <div class="tip-text">
+            <div style="display: flex; width: 100%;justify-content: center;">
+                <h1 id="text-h">龙葵</h1>
+            </div>
+            <div style="display: flex;flex-direction: column;">
+                <strong style="color: rgb(111, 174, 68);">
+                    简介:
+                </strong>
+                <p id="text-p1">卵形或卵状椭圆形叶常无毛；花小且下垂，花冠白色或淡紫色。</p>
+            </div>
+            <div style="display: flex;flex-direction: column;">
+                <strong style="color: rgb(111, 174, 68);">
+                    主治:
+                </strong>
+                <p id="text-p2">活血消钟、解热镇痛、抗菌。</p>
+            </div>
+        </div>
     </div>
-    <div id="goto" class="goto1">时医珍藥</div>
+    <audio id="bgmp3" src="src/bg.mp3" type="audio/mp3" loop="loop" volume="0.5"></audio>
+    <audio id="ren" src="src/ren.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+    <audio id="tian" src="src/tian.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+    <audio id="shan" src="src/shan.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+    <audio id="shui" src="src/shui.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+    <audio id="shu" src="src/shu.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
 </body>
-<script>
-    function goto(){
-        document.getElementById("goto").className = 'goto2';
-        setTimeout(function(){window.location.href="index.html";},1000);
-        
-    }
-</script>
+    <script src="SYZY.js"></script>
 </html>
