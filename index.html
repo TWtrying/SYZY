@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>时医珍藥</title>
+    <link rel="shortcut icon" href="src/icon.ico">
+    <link href="SYZY.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="init()">
+    <img id="rw" class="rw" src="src/lsz.png" onclick="but(event)">
+    <img id="bgimg" class="bgimg" src="src/bg.png" onclick="bgf0()">
+    <img id="lu1" class="lu1" src="src/l1.png">
+    <img id="lu2" class="lu2" src="src/l2.png">
+    <div id="tip" class="tip">
+        <div>
+            <img id="tip-img" src="src/1.png">
+        </div>
+        <div class="tip-text">
+            <div style="display: flex; width: 100%;justify-content: center;">
+                <h1 id="text-h">龙葵</h1>
+            </div>
+            <div style="display: flex;flex-direction: column;">
+                <strong style="color: rgb(111, 174, 68);">
+                    简介:
+                </strong>
+                <p id="text-p1">卵形或卵状椭圆形叶常无毛；花小且下垂，花冠白色或淡紫色。</p>
+            </div>
+            <div style="display: flex;flex-direction: column;">
+                <strong style="color: rgb(111, 174, 68);">
+                    主治:
+                </strong>
+                <p id="text-p2">活血消钟、解热镇痛、抗菌。</p>
+            </div>
+        </div>
+    </div>
+    <audio id="bgmp3" src="src/bg.mp3" type="audio/mp3" loop="loop" volume="0.5"></audio>
+    <audio id="ren" src="src/ren.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+    <audio id="tian" src="src/tian.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+    <audio id="shan" src="src/shan.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+    <audio id="shui" src="src/shui.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+    <audio id="shu" src="src/shu.mp3" type="audio/mp3" loop="loop" volume="1"></audio>
+</body>
+    <script src="SYZY.js"></script>
+</html>
